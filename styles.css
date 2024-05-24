@@ -1,0 +1,159 @@
+
+/* base styling */
+*{ 
+    font-family: sans-serif;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+.title {
+    margin-left: 2%;
+
+}
+
+
+/*
+navbar element
+*/
+.navbar {
+    width: 100%;
+}
+.navbar ul {
+    display: flex;
+    align-items: center; /* Vertically center */
+    list-style-type: none;
+    background-color: #448fd5;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 40px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.navbar li a:hover{
+    background-color: #6aa9e3;
+}
+.navbar li{
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 40px;
+}
+
+
+
+/*
+Homepage
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    margin: 0; 
+
+}
+.main-content {
+    display: flex;
+   
+}
+/* Style for the grid container */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns */
+    grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    gap: 2px; /* Gap between grid items */
+    align-items: center; /* centre calendar vertically */
+    width: 50%;
+    padding-left: 60px; 
+    padding-right: 60px; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 70px;
+}
+/* Style for individual grid items */
+.calendar-grid-item {
+    border: 1px solid #ccc; /* Border for each grid item */
+    padding: 10px; /* Padding for each grid item */
+    text-align: center; /* Center text */
+    width: 100px; /* Set width of grid items */
+    height: 100px; /* Set height of grid items */
+    border-radius: 5%; 
+}
+.newsbar {
+    font-size: 14px;
+    width: 400px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content:center ;
+    text-decoration-color: black;    
+}
+
+
+/*
+Log In page
+*/
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form horizontally */
+    justify-content: flex-start; /* Center the form vertically */
+    height: 100vh; 
+    padding-top: 100px;
+}
+.form-group {
+    margin-bottom: 20px; /* Add margin between form groups */
+}
+label {
+    color: black; 
+}
+input[type="text"],
+input[type="password"] {
+    width: 250px; 
+    padding: 10px; 
+    border: 1px solid ; 
+    border-radius: 5px; 
+}
+button {
+    width: 150px; 
+    padding: 10px; 
+    background-color: #448fd5; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+}
+button:hover {
+    background-color: #6aa9e3; 
+}
+
+/*
+Registration page
+*/
+.registration-form {
+    display: flex;
+    align-content: flex-start;
+    padding-left: 200px;
+    padding-top: 50px;
+    
+}
+.group-1{
+    display: flex;
+    flex-direction:column;
+    align-items: center; /* Center the form horizontally */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.group-2{
+    display: flex;
+    flex-direction:column;
+    align-items: center; /* Center the form horizontally */
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,93 @@
+*{ 
+    font-family: sans-serif;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+.title {
+    margin-left: 2%;
+
+}
+
+.navbar {
+    width: 100%;
+}
+.navbar ul {
+    display: flex;
+    align-items: center; /* Vertically center */
+    list-style-type: none;
+    background-color: #448fd5;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 40px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.navbar li a:hover{
+    background-color: #4f9de6;
+}
+.navbar li{
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 40px;
+}
+
+
+body {
+    
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    
+}
+
+.create-event-title{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+summary {
+    margin-left: 20%; /* keep content horozontally centered  */
+    padding: 1em;
+    max-width: 50%;
+    background: #448fd5;
+    color: white;
+    margin-bottom: 1em;
+    outline: none;
+    border-radius: .3em;
+    transition: background-color .1s;
+    
+    &:hover {
+        background: #4f9de6;
+    }
+    
+}
+
+details[open] summary~ * {
+    max-width: 50%;
+     margin-left: 20%; /* keep content horozontally centered  */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    margin-right: 1em; /* keep space between lable and input */
+}
+
+.form-group input {
+    flex: 1; /* resizing for mobile view */
+    padding: 1em; 
+}
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Event</title>
+<link rel="stylesheet" href="styles-create-event.css">
+</head>
+<body>
+
+<header>
+
+    <!-- navbar -->
+<div>
+    <h1 class="title">OU Running Club</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Log-In.html">Log In</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="create-event.html">Create Event</a></li>
+        </ul>
+    </nav>
+</div>
+
+</header>
+
+<body>
+
+<h2 class="create-event-title"> Create Event</h2>
+
+<!-- event and ride event forms -->
+<details>
+    <summary>Create Ride Event</summary>
+
+    <div class="form-group">
+    <label for="ride_name">Name of Ride:</label><br>
+                <input type="text" id="ride_name" name="ride_name" ><br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="ride_type">Type of Ride:</label><br>
+        <input type="text" id="ride_type" name="ride_type" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="ride_date">Date of Ride:</label><br>
+        <input type="date" id="ride_date" name="ride_date"><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="start_time">Start time:</label><br>
+        <input type="time" id="start_time" name="start_time"><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="duration">Duration:</label><br>
+        <input type="text" id="duration" name="duration" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="meeting_point">Meeting point:</label><br>
+        <input type="text" id="meeting_point" name="meeting_point" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="distance_km">Distance in km:</label><br>
+        <input type="number" id="distance_km" name="distance_km" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="elevation_m">Elevation in m:</label><br>
+        <input type="number" id="elevation_m" name="elevation_m" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="max_group_size">Maximum group size:</label><br>
+        <input type="number" id="max_group_size" name="max_group_size" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="leader_name">Name of leader:</label><br>
+        <input type="text" id="leader_name" name="leader_name" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="contact_number">Contact number:</label><br>
+        <input type="tel" id="contact_number" name="contact_number" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="alt_contact_number">Alternative contact number:</label><br>
+        <input type="tel" id="alt_contact_number" name="alt_contact_number" ><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" ></textarea><br><br>
+    </div>
+    
+    <div class="form-group">
+        <label for="status">Status:</label><br>
+        <select id="status" name="status">
+            <option value="Proposed">Proposed</option>
+            <option value="Approved">Approved</option>
+            <option value="Rejected">Rejected</option>
+        </select><br><br>
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" value="Submit">
+    </div>
+</details>
+
+<details>
+    <summary>Create Other Event</summary>
+    <div class="content">
+    
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" id="type" name="type" required>
+            </div class="hot-fix">
+            
+            <div class="form-group">
+                <label for="starting-time">Starting Time</label>
+                <input type="time" id="starting-time" name="starting_time" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="duration">Duration (in hours)</label>
+                <input type="number" id="duration" name="duration" min="0" step="0.5" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+
+    </div>
+</details>
+
+
+</body>
+</html>
