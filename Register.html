@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-    <h1 class="title">OU Running Club</h1>
-        <nav class = "navbar">
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="Log-In.html">Log In</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="create-event.html">Create Event</a></li>
-            </ul>
-        </nav>
-   </div>
+    <nav class="navbar">
+        <div class="brand-title">OU Cycle Club</div>
+        <div class="navbar-links">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Log-In.html">Log In</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="create-event.html">Create Event</a></li>
+        </ul>
+    </div>
+    </nav>
 
 
 <body>
     <div class="registration-form">
     <div class="group-1">
         <form action="submit_registration.php" method="POST"> 
-            <h2>Registration</h2>
+            <h2 class = "registration-title">Registration</h2>
             <div class="form-group">
                 <label for="forename">Forename:</label>
                 <input type="text" id="forename" name="forename" required>
@@ -117,7 +117,9 @@
                 <input type="radio" id="no" name="automatic-renewal" value="no">
                 <label for="no">No</label>
             </div>
+            <div class="register-button">
             <button type="submit">Register</button>
+            </div>
         </form>
     </div> 
     

@@ -6,43 +6,89 @@
     text-decoration-color: black;
 }
 
-.title {
-    margin-left: 2%;
-
-}
-
-
-/*
-navbar element
-*/
 .navbar {
-    width: 100%;
-}
-.navbar ul {
     display: flex;
-    align-items: center; /* Vertically center */
-    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
     background-color: #448fd5;
-    min-width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    height: 40px;
-}
-.navbar a{
     color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none
+}
+
+.navbar-links li a {
     text-decoration: none;
-    padding: 10px;
+    color:  white;
+    padding: 1rem;
     display: block;
 }
-.navbar li a:hover{
-    background-color: #6aa9e3;
+
+.navbar-links li:hover {
+    background-color:  #4f9de6;
 }
-.navbar li{
-    float: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 40px;
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+
+@media (max-width: 600px) {
+
+        
+        .toggle-button {
+            display: flex;
+        }
+        .navbar-links {
+            width: 100%;
+        }
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar-links li {
+            text-align: center;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+       
 }
 
 
@@ -55,60 +101,63 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh; 
-    margin: 0; 
+    margin: 0;
+    padding: 0;
 
 }
-.main-content {
-    display: flex;
-   
-}
-/* Style for the grid container */
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 columns */
-    grid-template-rows: repeat(4, 1fr); /* 4 rows */
-    gap: 2px; /* Gap between grid items */
-    align-items: center; /* centre calendar vertically */
-    width: 50%;
-    padding-left: 60px; 
-    padding-right: 60px; 
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-right: 70px;
-}
-/* Style for individual grid items */
-.calendar-grid-item {
-    border: 1px solid #ccc; /* Border for each grid item */
-    padding: 10px; /* Padding for each grid item */
-    text-align: center; /* Center text */
-    width: 100px; /* Set width of grid items */
-    height: 100px; /* Set height of grid items */
-    border-radius: 5%; 
-}
+
+
 .newsbar {
     font-size: 14px;
-    width: 400px;
-    margin-left: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-top: 3rem;
     justify-content:center ;
-    text-decoration-color: black;    
+    text-decoration-color: black;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
+
+.news-item {
+    
+    border: 1px solid #000; 
+    padding: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+    .newsbar{
+        flex-direction: column;
+    }
+}
+
 
 
 /*
 Log In page
 */
+
+
 .login-form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the form horizontally */
+    align-items:flex-start; /* Center the form horizontally */
     justify-content: flex-start; /* Center the form vertically */
+    margin-left: auto;
+    margin-right: auto;
     height: 100vh; 
-    padding-top: 100px;
+    padding-top: 5em;
 }
 .form-group {
-    margin-bottom: 20px; /* Add margin between form groups */
+    margin-bottom: 1em; /* Add margin between form groups */
+}
+
+#log-in-title{
+    align-items: center;
+
 }
 label {
     color: black; 
@@ -121,7 +170,10 @@ input[type="password"] {
     border-radius: 5px; 
 }
 button {
-    width: 150px; 
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
     padding: 10px; 
     background-color: #448fd5; 
     color: white; 
@@ -138,22 +190,96 @@ Registration page
 .registration-form {
     display: flex;
     align-content: flex-start;
-    padding-left: 200px;
-    padding-top: 50px;
+    /* padding-left: 200px;
+    padding-top: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 0;
     
 }
 .group-1{
     display: flex;
     flex-direction:column;
-    align-items: center; /* Center the form horizontally */
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: left; /* Center the form horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 2em; /* keep space between lable and input */
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }
 .group-2{
     display: flex;
     flex-direction:column;
-    align-items: center; /* Center the form horizontally */
-    padding-top: 70px;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: left; /* Center the form horizontally */
+    padding-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }
+
+@media (max-width: 600px) {
+
+    .registration-title{
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .registration-form {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1em;
+    }
+    .group-1{
+        width: 100%;
+        padding-top: 1em;
+    }
+    .group-2{
+        width: 100%;
+        padding-top: 1em;
+        
+    }
+
+    .register-button{
+        align-items:center;
+    }
+
+
+
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    height: 50px; 
+}
+td {
+    text-align: center; 
+    vertical-align: top;
+    padding-top: 5px;
+    height: 100px;  
+}
+
+.weekend {
+    background: #e0e0e0;
+}
+.next-month {
+    background: #f5f5f5;
+
+}
+.wrapper {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+
