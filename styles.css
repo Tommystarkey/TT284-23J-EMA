@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #448fd5;
+    background-color: #666666;
     color: white;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .navbar-links li:hover {
-    background-color:  #4f9de6;
+    background-color:  #888888;
 }
 
 .toggle-button {
@@ -87,6 +87,10 @@
 
         .navbar-links.active {
             display: flex;
+        }
+
+        #wrapper{
+            display: none;
         }
        
 }
@@ -175,13 +179,13 @@ button {
     margin-right: auto;
     width: 90%; 
     padding: 10px; 
-    background-color: #448fd5; 
+    background-color: #666666; 
     color: white; 
     border: none;
     border-radius: 5px; 
 }
 button:hover {
-    background-color: #6aa9e3; 
+    background-color: #888888; 
 }
 
 /*
@@ -244,9 +248,16 @@ Registration page
     .register-button{
         align-items:center;
     }
+}
 
+@media (min-width: 600px) {
 
-
+    #mobile-wrapper{
+        display: none;
+    }
+    #mobile-calendar{
+        display: none;
+    }
 }
 
 
@@ -279,6 +290,25 @@ td {
     padding-left: 5%;
     padding-right: 5%;
 
+}
+#mobile-calendar{
+    margin-top: 2rem;
+    
+}
+
+#mobile-calendar-button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+
+.mobile-calendar-navigation{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 

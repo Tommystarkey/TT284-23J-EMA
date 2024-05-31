@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #448fd5;
+    background-color: #666666;
     color: white;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-links li:hover {
-    background-color:  #4f9de6;
+    background-color:  #888888;
 }
 
 .toggle-button {
@@ -107,7 +107,7 @@ summary {
     margin-right: auto;
     padding: 1em;
     max-width: 70%;
-    background: #448fd5;
+    background: #666666;
     color: white;
     text-align: center;
     margin-bottom: 1em;
@@ -116,7 +116,7 @@ summary {
     transition: background-color .1s;
     
     &:hover {
-        background: #4f9de6;
+        background: #888888;
     }
     
 }
