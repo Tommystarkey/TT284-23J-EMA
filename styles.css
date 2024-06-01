@@ -6,6 +6,16 @@
     text-decoration-color: black;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+
+}
+
+/* navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -43,21 +53,6 @@
     display: block;
 }
 
-/*
-event mananger link
-*/
-td li {
-    list-style: none; 
-    background-color: #666666;
-}
-
-td li a {
-    text-decoration: none; 
-    color: white;
-    display: block; 
-    padding: 5px; 
-}
-
 .newsbar li{
     list-style: none; 
     background-color: #666666;
@@ -76,34 +71,12 @@ td li a {
 .navbar-links li:hover {
     background-color:  #888888;
 }
-td li a:hover{
-    background-color:  #888888;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
 
 
-}
 
+/* responsive navigation */
 @media (max-width: 600px) {
 
-        
         .toggle-button {
             display: flex;
         }
@@ -134,27 +107,95 @@ td li a:hover{
        
 }
 
+/* Homepage */
 
 
-/*
-Homepage
-*/
+/* calendar */
 
-body {
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    height: 50px; 
+}
+td {
+    text-align: center; 
+    vertical-align: top;
+    padding-top: 5px;
+    height: 70px;  
+}
+
+.weekend {
+    background: #e0e0e0;
+}
+.next-month {
+    background: #f5f5f5;
+
+}
+.wrapper {
+    max-width: 90%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: 100vh; 
-    margin: 0;
-    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
+/* responsive calendar */
+
+    #mobile-calendar{
+        margin-top: 2rem;
+        
+    }
+
+    #mobile-calendar-button{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+    }
+
+
+    .mobile-calendar-navigation{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+
+        /* event mananger link */
+        td li {
+            list-style: none; 
+            background-color: #666666;
+        }
+
+        td li a {
+            text-decoration: none; 
+            color: white;
+            display: block; 
+            padding: 5px; 
+        }
+
+        td li a:hover{
+            background-color:  #888888;
+        }
+
+
+
+
+
+
+/* news items */
 
 .newsbar {
     font-size: 14px;
     margin-left: auto;
     margin-top: auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
     justify-content:center ;
     text-decoration-color: black;   
     display: flex;
@@ -167,10 +208,17 @@ body {
     
     border: 1px solid #000; 
     padding: 10px;
+
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
+
+.news-item p {
+    margin-top: 0.05rem;
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 600px) {
     .newsbar{
         flex-direction: column;
@@ -187,15 +235,15 @@ Log In page
 .login-form {
     display: flex;
     flex-direction: column;
-    align-items:flex-start; /* Center the form horizontally */
-    justify-content: flex-start; /* Center the form vertically */
+    align-items:flex-start; 
+    justify-content: flex-start; 
     margin-left: auto;
     margin-right: auto;
     height: 100vh; 
     padding-top: 5em;
 }
 .form-group {
-    margin-bottom: 1em; /* Add margin between form groups */
+    margin-bottom: 1em;
 }
 
 #log-in-title{
@@ -242,14 +290,13 @@ button:hover {
     background-color: #888888; 
 }
 
+
 /*
 Registration page
 */
 .registration-form {
     display: flex;
     align-content: flex-start;
-    /* padding-left: 200px;
-    padding-top: 50px; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
@@ -259,25 +306,23 @@ Registration page
 .group-1{
     display: flex;
     flex-direction:column;
-    align-items: left; /* Center the form horizontally */
+    align-items: left; 
     margin-left: auto;
     margin-right: auto;
-    margin-right: 2em; /* keep space between lable and input */
-    /* padding-left: 30px;
-    padding-right: 30px; */
+    margin-right: 2em; 
+    
 }
 .group-2{
     display: flex;
     flex-direction:column;
-    align-items: left; /* Center the form horizontally */
+    align-items: left; 
     padding-top: 2em;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 30px;
-    padding-right: 30px; */
+    
 }
 
-
+/* responsive element */
 @media (max-width: 600px) {
 
     .registration-title{
@@ -316,55 +361,6 @@ Registration page
 }
 
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-th{
-    height: 50px; 
-}
-td {
-    text-align: center; 
-    vertical-align: top;
-    padding-top: 5px;
-    height: 100px;  
-}
-
-.weekend {
-    background: #e0e0e0;
-}
-.next-month {
-    background: #f5f5f5;
-
-}
-.wrapper {
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 5%;
-    padding-right: 5%;
-
-}
-#mobile-calendar{
-    margin-top: 2rem;
-    
-}
-
-#mobile-calendar-button{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    justify-content: center;
-}
-
-
-.mobile-calendar-navigation{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 
 
 

@@ -6,6 +6,16 @@
     text-decoration-color: black;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+
+}
+
+/* navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -41,33 +51,9 @@
     background-color:  #888888;
 }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-
-
-}
-
+/* responsive navigation */
 @media (max-width: 600px) {
 
-        
-        .toggle-button {
-            display: flex;
-        }
         .navbar-links {
             width: 100%;
         }
@@ -88,35 +74,83 @@
         .navbar-links.active {
             display: flex;
         }
-
-        #wrapper{
-            display: none;
-        }
        
 }
 
 
 
-/*
-Homepage
-*/
 
-body {
+/* event manager */
+.event-manager-form {
     display: flex;
-    flex-direction: column;
-    height: 100vh; 
-    margin: 0;
-    padding: 0;
+    align-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+
+.group-1{
+    display: flex;
+    flex-direction:column;
+    align-items: left; 
+    margin-left: auto;
+    margin-right: 1em; 
+
+}
+.group-2{
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
+.group-1 label {
+    margin-right: 1em;
+}
+
+.group-1 input {
+    margin-left: auto; 
+}
+
+.form-group{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 
 
+/* responsive element */
+@media (max-width: 600px) {
+
+    .registration-title{
+        text-align: center;
+    }
+
+    .event-manager-form{
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+
+    }
+    .group-1{
+        width: 100%;
+    }
+    .group-2{
+        width: 100%;
+        
+    }
 
 
+    /* responsive buttons */
+    button{
+        align-items:center;
+    }
+}
 
-
-
+/* lables and inputs */
 label {
     color: black; 
 }
@@ -127,62 +161,8 @@ input[type="password"] {
     border: 1px solid ; 
     border-radius: 5px; 
 }
-.register-button {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%; 
-    padding: 10px; 
-    background-color: #666666; 
-    color: white; 
-    border: none;
-    border-radius: 5px; 
-}
-.register-button:hover {
-    background-color: #888888; 
-}
 
-/*
-Registration page
-*/
-
-
-
-.main-content{
-    display: flex;
-    flex-direction: column;
-}
-.registration-form {
-    display: flex;
-    align-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-top: 0;
-    
-}
-.group-1{
-    display: flex;
-    flex-direction:column;
-    align-items: left; /* Center the form horizontally */
-    margin-left: auto;
-    margin-right: auto;
-    margin-right: 2em; /* keep space between lable and input */
-
-}
-.group-2{
-    display: flex;
-    flex-direction:column;
-    align-items: left; /* Center the form horizontally */
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.form-group{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
+/* buttons */
 button {
     margin-top: 0.5em;
     margin-left: auto;
@@ -198,39 +178,6 @@ button:hover {
     background-color: #888888; 
 }
 
-@media (max-width: 600px) {
-
-    .registration-title{
-        text-align: center;
-    }
-
-    .registration-form {
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-
-    }
-    .group-1{
-        width: 100%;
-        /* padding-top: 1em; */
-    }
-    .group-2{
-        width: 100%;
-        /* padding-top: 1em; */
-        
-    }
-
-    .register-button{
-        align-items:center;
-    }
-}
-
-@media (min-width: 600px) {
-
-    #mobile-wrapper{
-        display: none;
-    }
-    #mobile-calendar{
-        display: none;
-    }
+.buttons{
+    margin-bottom: 1rem;
 }

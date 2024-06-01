@@ -1,3 +1,5 @@
+/* base styling */
+
 * {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -8,6 +10,7 @@ body {
     padding: 0;
 }
 
+/* navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,65 +45,45 @@ body {
     background-color:  #888888;
 }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-
-
-}
-
+/* responsive navigation */
 @media (max-width: 600px) {
 
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
         
-        .toggle-button {
-            display: flex;
-        }
-        .navbar-links {
-            width: 100%;
-        }
-        .navbar {
-            flex-direction: column;
-            align-items: flex-start;
-            
-        }
-        .navbar-links ul {
-            width: 100%;
-            flex-direction: column;
-        }
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
 
-        .navbar-links li {
-            text-align: center;
-        }
+    .navbar-links li {
+        text-align: center;
+    }
 
-        .navbar-links.active {
-            display: flex;
-        }
-       
+    .navbar-links.active {
+        display: flex;
+    }
+   
 }
 
 
+
+
+/* create event element */
 .create-event-title {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-
-
 
 summary {
     margin-left: auto;
@@ -134,13 +117,15 @@ details[open] summary~ * {
 }
 
 .form-group label {
-    margin-right: 1em; /* keep space between lable and input */
+    margin-right: 1em; /
 }
 
 .form-group input {
-    flex: 1; /* resizing for mobile view */
+    flex: 1; 
     padding: 1em; 
 }
+
+
 
 
 
