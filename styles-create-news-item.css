@@ -27,7 +27,13 @@
 }
 
 .navbar-links li {
-    list-style: none
+    list-style: none;
+}
+
+.event-manager  a{
+    list-style: none;
+    text-decoration: none;
+
 }
 
 .navbar-links li a {
@@ -37,7 +43,24 @@
     display: block;
 }
 
+td li {
+    list-style: none; /* Removes bullet point from the list item */
+    background-color: #666666;
+}
+
+
+td li a {
+    text-decoration: none; /* Removes underline from the link */
+    color: white; /* Sets the text color to white */
+    display: block; /* Makes the anchor tag a block element so it fills the li */
+    padding: 5px; /* Adds some padding for better readability */
+}
+
+
 .navbar-links li:hover {
+    background-color:  #888888;
+}
+td li a:hover{
     background-color:  #888888;
 }
 
@@ -111,9 +134,76 @@ body {
 }
 
 
+.newsbar {
+    font-size: 14px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-top: 3rem;
+    justify-content:center ;
+    text-decoration-color: black;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.news-item {
+    
+    border: 1px solid #000; 
+    padding: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+    .newsbar{
+        flex-direction: column;
+    }
+}
 
 
 
+/*
+Log In page
+*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+}
+
+.inline-group label {
+    margin-right: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical; /* Allow vertical resizing */
+}
 
 
 
@@ -127,90 +217,38 @@ input[type="password"] {
     border: 1px solid ; 
     border-radius: 5px; 
 }
-.register-button {
+button {
+    margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    width: 90%; 
+    width: 100%; 
     padding: 10px; 
     background-color: #666666; 
     color: white; 
     border: none;
     border-radius: 5px; 
 }
-.register-button:hover {
+
+button:hover {
     background-color: #888888; 
 }
 
-/*
-Registration page
-*/
 
 
-.main-content{
-    display: flex;
-    flex-direction: column;
-}
-.registration-form {
-    display: flex;
-    align-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-top: 0;
-    
-}
-.group-1{
-    display: flex;
-    flex-direction:column;
-    align-items: left; /* Center the form horizontally */
-    margin-left: auto;
-    margin-right: auto;
-    margin-right: 2em; /* keep space between lable and input */
 
-}
-.group-2{
-    display: flex;
-    flex-direction:column;
-    align-items: left; /* Center the form horizontally */
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
-@media (max-width: 600px) {
 
-    .registration-title{
-        text-align: center;
-    }
 
-    .registration-form {
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
 
-    }
-    .group-1{
-        width: 100%;
-        /* padding-top: 1em; */
-    }
-    .group-2{
-        width: 100%;
-        /* padding-top: 1em; */
-        
-    }
 
-    .register-button{
-        align-items:center;
-    }
-}
 
-@media (min-width: 600px) {
 
-    #mobile-wrapper{
-        display: none;
-    }
-    #mobile-calendar{
-        display: none;
-    }
-}
+
+
+
+
+
+
+
 

@@ -27,13 +27,7 @@
 }
 
 .navbar-links li {
-    list-style: none;
-}
-
-.event-manager  a{
-    list-style: none;
-    text-decoration: none;
-
+    list-style: none
 }
 
 .navbar-links li a {
@@ -43,40 +37,7 @@
     display: block;
 }
 
-/*
-event mananger link
-*/
-td li {
-    list-style: none; 
-    background-color: #666666;
-}
-
-td li a {
-    text-decoration: none; 
-    color: white;
-    display: block; 
-    padding: 5px; 
-}
-
-.newsbar li{
-    list-style: none; 
-    background-color: #666666;
-}
-.newsbar li a {
-    text-decoration: none; 
-    color: white; 
-    display: block; 
-    padding: 5px; 
-}
-.newsbar li:hover {
-    background-color:  #888888;
-}
-
-
 .navbar-links li:hover {
-    background-color:  #888888;
-}
-td li a:hover{
     background-color:  #888888;
 }
 
@@ -150,58 +111,12 @@ body {
 }
 
 
-.newsbar {
-    font-size: 14px;
-    margin-left: auto;
-    margin-top: auto;
-    margin-top: 3rem;
-    justify-content:center ;
-    text-decoration-color: black;   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-
-.news-item {
-    
-    border: 1px solid #000; 
-    padding: 10px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-@media (max-width: 600px) {
-    .newsbar{
-        flex-direction: column;
-    }
-}
 
 
 
-/*
-Log In page
-*/
 
 
-.login-form {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start; /* Center the form horizontally */
-    justify-content: flex-start; /* Center the form vertically */
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh; 
-    padding-top: 5em;
-}
-.form-group {
-    margin-bottom: 1em; /* Add margin between form groups */
-}
 
-#log-in-title{
-    align-items: center;
-
-}
 label {
     color: black; 
 }
@@ -212,8 +127,64 @@ input[type="password"] {
     border: 1px solid ; 
     border-radius: 5px; 
 }
+.register-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    padding: 10px; 
+    background-color: #666666; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+}
+.register-button:hover {
+    background-color: #888888; 
+}
+
+/*
+Registration page
+*/
+
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+.registration-form {
+    display: flex;
+    align-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+.group-1{
+    display: flex;
+    flex-direction:column;
+    align-items: left; /* Center the form horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 2em; /* keep space between lable and input */
+
+}
+.group-2{
+    display: flex;
+    flex-direction:column;
+    align-items: left; /* Center the form horizontally */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-group{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 button {
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
     width: 90%; 
@@ -227,60 +198,25 @@ button:hover {
     background-color: #888888; 
 }
 
-/*
-Registration page
-*/
-.registration-form {
-    display: flex;
-    align-content: flex-start;
-    /* padding-left: 200px;
-    padding-top: 50px; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    margin-bottom: 0;
-    
-}
-.group-1{
-    display: flex;
-    flex-direction:column;
-    align-items: left; /* Center the form horizontally */
-    margin-left: auto;
-    margin-right: auto;
-    margin-right: 2em; /* keep space between lable and input */
-    /* padding-left: 30px;
-    padding-right: 30px; */
-}
-.group-2{
-    display: flex;
-    flex-direction:column;
-    align-items: left; /* Center the form horizontally */
-    padding-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding-left: 30px;
-    padding-right: 30px; */
-}
-
 @media (max-width: 600px) {
 
     .registration-title{
-        margin-bottom: 2em;
         text-align: center;
     }
 
     .registration-form {
         flex-direction: column;
         text-align: center;
-        margin-top: 1em;
+        margin: 0;
+
     }
     .group-1{
         width: 100%;
-        padding-top: 1em;
+        /* padding-top: 1em; */
     }
     .group-2{
         width: 100%;
-        padding-top: 1em;
+        /* padding-top: 1em; */
         
     }
 
@@ -298,57 +234,3 @@ Registration page
         display: none;
     }
 }
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-th{
-    height: 50px; 
-}
-td {
-    text-align: center; 
-    vertical-align: top;
-    padding-top: 5px;
-    height: 100px;  
-}
-
-.weekend {
-    background: #e0e0e0;
-}
-.next-month {
-    background: #f5f5f5;
-
-}
-.wrapper {
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 5%;
-    padding-right: 5%;
-
-}
-#mobile-calendar{
-    margin-top: 2rem;
-    
-}
-
-#mobile-calendar-button{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    justify-content: center;
-}
-
-
-.mobile-calendar-navigation{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-
-
