@@ -45,7 +45,6 @@
 
 
 
-
 .navbar-links li:hover {
     background-color:  #888888;
 }
@@ -99,9 +98,7 @@
             display: flex;
         }
 
-        #wrapper{
-            display: none;
-        }
+        
        
 }
 
@@ -176,6 +173,19 @@ Log In page
     margin-right: 1em;
 }
 
+.inline-group input {
+    margin-left: auto; 
+}
+
+.inline-group select {
+    margin-right: 1em;
+}
+
+.inline-group select {
+    margin-left: auto; 
+}
+
+
 label {
     display: block;
     margin-bottom: 0.5em;
@@ -219,27 +229,6 @@ button {
 button:hover {
     background-color: #888888; 
 }
-
-.inline-group {
-    display: flex;
-    align-items: center;
-}
-
-.inline-group label {
-    margin-right: 1em;
-}
-
-.inline-group input {
-    margin-left: auto; 
-}
-
-
-
-
-
-
-
-
 
 
 

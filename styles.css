@@ -202,6 +202,19 @@ Log In page
     align-items: center;
 
 }
+
+.inline-group {
+    display: flex;
+    align-items: center;
+}
+
+.login-form label {
+    margin-right: 1em;
+}
+
+.login-form input {
+    margin-left: auto; 
+}
 label {
     color: black; 
 }
@@ -212,6 +225,8 @@ input[type="password"] {
     border: 1px solid ; 
     border-radius: 5px; 
 }
+
+
 button {
     margin-top: 1em;
     margin-left: auto;
@@ -261,6 +276,7 @@ Registration page
     /* padding-left: 30px;
     padding-right: 30px; */
 }
+
 
 @media (max-width: 600px) {
 
