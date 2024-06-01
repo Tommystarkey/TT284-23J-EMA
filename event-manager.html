@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">OU Cycle Club</div>
+        <div class="navbar-links">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Log-In.html">Log In</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="create-event.html">Create Event</a></li>
+        </ul>
+    </div>
+    </nav>
+
+
+<body>
+    <h3>Event Manager - Edinburgh Park Ride</h3>
+    <div class="registration-form">
+    <div class="group-1">
+        <form action="submit_registration.php" method="POST"> 
+            <div class="form-group">
+                <label for="forename">Ride Name:</label>
+                <input type="text" id="forename" name="forename" placeholder="Ryan Muldoon" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Type of Ride:</label>
+                <input type="text" id="surname" name="surname" placeholder="Road" required>
+            </div>
+
+            <div class="form-group">
+                <p>Date:</p>
+                <label for="ride_date">(current date 31/05/2024)</label><br>
+                <input type="date" id="ride_date" name="ride_date"><br><br>
+            </div>
+
+            
+            <div class="form-group">
+                <p>Start Time</p>
+                <label for="start_time">(Current time 14:00)</label><br>
+                <input type="time" id="start_time" name="start_time"><br><br>
+            </div>
+        
+            <div class="form-group">
+                <label for="duration">Duration:</label><br>
+                <input type="text" id="duration" name="duration" placeholder="1 hour" ><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="meeting_point">Meeting point:</label><br>
+                <input type="text" id="meeting_point" name="meeting_point" placeholder="Usher Hall" ><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="distance_km">Distance (km):</label><br>
+                <input type="number" id="distance_km" name="distance_km" placeholder="4km" ><br><br>
+            </div>
+            <div class="form-group">
+                <label for="elevation_m">Elevation (m):</label><br>
+                <input type="number" id="elevation_m" name="elevation_m" placeholder="0" ><br><br>
+            </div>
+    </div>
+
+
+    <div class="group-1">
+
+        <div class="form-group">
+            <label for="max_group_size">Maximum group size:</label><br>
+            <input type="number" id="max_group_size" name="max_group_size" placeholder="20" ><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="leader_name">Name of leader:</label><br>
+            <input type="text" id="leader_name" name="leader_name" placeholder="Oisean Darragh" ><br><br>
+        </div>
+
+            
+        <div class="form-group">
+            <label for="contact_number">Contact number:</label><br>
+            <input type="tel" id="contact_number" name="contact_number" placeholder="##### #####" ><br><br>
+        </div>
+        
+        <div class="form-group">
+            <label for="alt_contact_number">Alternative contact number:</label><br>
+            <input type="tel" id="alt_contact_number" name="alt_contact_number" placeholder="#####" ><br><br>
+        </div>
+            
+        <div class="form-group">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="rainy weather forcasted, please dress for the weather " ></textarea><br><br>
+        </div>
+            
+        <div class="form-group">
+            <label for="status">Status:</label><br>
+            <select id="status" name="status">
+                <option value="Proposed">Proposed</option>
+                <option value="Approved">Approved</option>
+                <option value="Rejected">Rejected</option>
+            </select><br><br>
+        </div>
+        
+        <div>
+            <button> Update</button>
+            <button> Delete</button>
+        </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,16 @@
+ride name
+Type of ride
+date time
+start time
+duration
+meeting point
+distance in km
+
+
+elevation in m
+maximum group size
+name of leader
+contact number
+alternative contact number
+comments
+status approved
