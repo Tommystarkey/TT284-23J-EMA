@@ -107,6 +107,7 @@ body {
 .inline-group {
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .inline-group label {

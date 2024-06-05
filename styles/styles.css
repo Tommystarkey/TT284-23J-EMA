@@ -251,10 +251,6 @@ Log In page
 
 }
 
-.inline-group {
-    display: flex;
-    align-items: center;
-}
 
 .login-form label {
     margin-right: 1em;
